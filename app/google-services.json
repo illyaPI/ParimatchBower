@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "438735030684",
+    "project_id": "compoksparmarappp",
+    "storage_bucket": "compoksparmarappp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438735030684:android:cf58f9e72098342ea6e059",
+        "android_client_info": {
+          "package_name": "com.poks.par.mar.appp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438735030684-t26mvmp09eejkad2aad3f58j4p3cp6bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwMb8gSfdzmPbo1hSZmUqpq1zmIXBg-vU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438735030684-t26mvmp09eejkad2aad3f58j4p3cp6bf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
