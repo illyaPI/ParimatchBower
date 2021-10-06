@@ -2,5 +2,13 @@
     <string name="app_name">Париматч</string>
 
     <string name="enter_your_guess_here">Enter your guess here</string>
-    <string name="edit_text_guess_icon_description">Submit the number</string>
+    <string name="edit_text_guess_icon_description">Submit your guess</string>
+    <string name="edit_text_guess_error_msg">Guess must be a unique %1$d-digit number</string>
+
+    <string name="try_to_guess">Try to guess the number, it consists of %1$d digits</string>
+    <string name="number">№%1$d</string>
+    <string name="your_guess">Guess: %1$d</string>
+    <string name="bulls_cows">B:%1$d C:%2$d</string>
+
+    <string name="you_win">You win! The right number was: %1$d</string>
 </resources>
