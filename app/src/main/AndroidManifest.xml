@@ -16,7 +16,7 @@
     </queries>
 
     <application
-        android:name=".application.GameApplication"
+        android:name=".applicationbower.GameApplicationBower"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -26,14 +26,21 @@
         android:usesCleartextTraffic="true">
 
         <activity
-            android:name=".ui.activities.MainActivity"
-            android:exported="true">
+            android:name=".uibower.activitiesbower.MainActivityBower"
+            android:configChanges="keyboardHidden|screenLayout|orientation|keyboard|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="com.poks.par.mar.appp.important.servicesbower.InternetCheckerServiceBower"
+            android:enabled="true"
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -54,7 +61,7 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/external" />
+                android:resource="@xml/external_bower" />
         </provider>
     </application>
 

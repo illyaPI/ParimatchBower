@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_back_bower"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back_bower"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_avatar_bower"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_top_bower" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_avatar_bower"
+        style="@style/App.ImageView.Avatar" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_title_name_bower"
+        style="@style/App.TextView.Title"
+        android:text="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_name_bower" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_name_bower"
+        style="@style/App.TextView"
+        android:text="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_email_bower"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_bottom_avatar_bower" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_title_email_bower"
+        style="@style/App.TextView.Title"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_email_bower" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_email_bower"
+        style="@style/App.TextView"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_age_bower"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_name_bower" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_title_age_bower"
+        style="@style/App.TextView.Title"
+        android:text="@string/age"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_age_bower" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_age_bower"
+        style="@style/App.TextView"
+        android:text="@string/age"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom_bower"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_email_bower" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_privacy_policy_bower"
+        style="@style/App.TextView.Title"
+        android:text="@string/privacy_policy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_bottom_bower" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_avatar_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

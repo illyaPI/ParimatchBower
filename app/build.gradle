@@ -5,6 +5,7 @@ plugins {
     id 'com.google.gms.google-services'
     id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
     id 'com.guardsquare.proguard'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -19,7 +20,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField 'String', 'PRIVACY_POLICY_KEY_BOWER', '""'
+        buildConfigField 'String', 'PRIVACY_POLICY_KEY_BOWER', '"aHR0cHM6Ly9wYXJpbWF0Y2gtdHktbHVjaHNoaWkuZmx5Y3JpY2tldC5pby9wcml2YWN5Lmh0bWw="'
         buildConfigField 'String', 'ONE_SIGNAL_KEY_BOWER', '"YmEzM2M0OTgtZjAzZi00NDIzLWI1MTQtYzljMzkxYWMwMzE3"'
         buildConfigField 'String', 'APPS_FLYER_KEY_BOWER', '"VDN3RnBBMlhOc0RDQWVtcUg0VXduYQ=="'
     }
@@ -80,11 +81,11 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.8'
 
     //Firebase
-    implementation 'com.google.firebase:firebase-core:19.0.1'
+    implementation 'com.google.firebase:firebase-core:19.0.2'
     implementation 'com.google.firebase:firebase-config:21.0.1'
 
     //One Signal
-    implementation 'com.onesignal:OneSignal:4.5.0'
+    implementation 'com.onesignal:OneSignal:4.6.0'
 
     //Apps Flyer
     implementation 'com.appsflyer:af-android-sdk:6.3.2'
@@ -92,4 +93,7 @@ dependencies {
 
     //Google Services
     implementation 'com.google.android.gms:play-services-ads:20.4.0'
+
+    //Dexter
+    implementation 'com.karumi:dexter:6.2.3'
 }

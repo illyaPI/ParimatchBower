@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung_loading_bower">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_logg_bower"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_bower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_indicator_bower"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:indicatorColor="#FF0009"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end_bower"
+        app:layout_constraintStart_toEndOf="@+id/guideline_start_bower"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_logg_bower"
+        app:layout_constraintVertical_bias="0.65"
+        app:trackColor="@color/white"
+        app:trackThickness="24dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="L O A D I N G"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_end_bower"
+        app:layout_constraintStart_toEndOf="@+id/guideline_start_bower"
+        app:layout_constraintTop_toBottomOf="@+id/progress_indicator_bower" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

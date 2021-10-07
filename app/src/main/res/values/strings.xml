@@ -5,10 +5,22 @@
     <string name="edit_text_guess_icon_description">Submit your guess</string>
     <string name="edit_text_guess_error_msg">Guess must be a unique %1$d-digit number</string>
 
-    <string name="try_to_guess">Try to guess the number, it consists of %1$d digits</string>
+    <string name="try_to_guess">Try to guess the number:\nB:1 means you guessed 1 digit AND its position\nC:1 means you guessed only 1 digit</string>
     <string name="number">№%1$d</string>
     <string name="your_guess">Guess: %1$d</string>
     <string name="bulls_cows">B:%1$d C:%2$d</string>
-
     <string name="you_win">You win! The right number was: %1$d</string>
+
+    <string name="play">play</string>
+    <string name="profile">profile</string>
+    <string name="music_on">music on</string>
+    <string name="music_off">music off</string>
+
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="age">age</string>
+    <string name="privacy_policy">privacy policy</string>
+    <string name="create">create</string>
+
+    <string name="internet_is_not_working">Your internet is not working, please wait…</string>
 </resources>

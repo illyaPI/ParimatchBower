@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_back_bower"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back_bower"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_avatar_bower"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_top_bower" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_avatar_bower"
+        style="@style/App.ImageView.Avatar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_text_layout_name_bower"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@id/edit_text_layout_email_bower"
+        app:layout_constraintEnd_toStartOf="@id/guideline_end_bower"
+        app:layout_constraintStart_toEndOf="@+id/guideline_start_bower"
+        app:layout_constraintTop_toBottomOf="@id/image_view_avatar_bower">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_name_bower"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textSize="21sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_text_layout_email_bower"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@id/edit_text_layout_age_bower"
+        app:layout_constraintEnd_toStartOf="@id/guideline_end_bower"
+        app:layout_constraintStart_toEndOf="@+id/guideline_start_bower"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_layout_name_bower">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_email_bower"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textSize="21sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_text_layout_age_bower"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/age"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom_bower"
+        app:layout_constraintEnd_toStartOf="@id/guideline_end_bower"
+        app:layout_constraintStart_toEndOf="@+id/guideline_start_bower"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_layout_email_bower">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_age_bower"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:textSize="21sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_create_bower"
+        style="@style/App.Button"
+        android:enabled="false"
+        android:text="@string/create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_bottom_bower" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_avatar_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

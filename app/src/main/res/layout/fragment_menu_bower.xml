@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_avatar_bower"
+        style="@style/App.ImageView.Avatar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_play_bower"
+        style="@style/App.Button"
+        android:text="@string/play"
+        app:layout_constraintBottom_toTopOf="@+id/button_profile_bower"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_bottom_avatar_bower" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_profile_bower"
+        style="@style/App.Button"
+        android:text="@string/profile"
+        app:layout_constraintBottom_toTopOf="@+id/button_music_bower"
+        app:layout_constraintTop_toBottomOf="@+id/button_play_bower" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_music_bower"
+        style="@style/App.Button"
+        android:text="@string/music_on"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom_bower"
+        app:layout_constraintTop_toBottomOf="@+id/button_profile_bower" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_avatar_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end_bower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
