@@ -16,7 +16,7 @@ import com.poks.par.mar.appp.important.servicesbower.InternetCheckerServiceBower
 import com.poks.par.mar.appp.uibower.activitiesbower.MainActivityBower
 import com.poks.par.mar.appp.important.blswqe.webviewbower.GameWebViewClientBower
 import com.poks.par.mar.appp.pampdebower.utilbower.ViewBindingFragmentBower
-import com.poks.par.mar.appp.pampdebower.utilbower.decodeFromBase64
+import com.poks.par.mar.appp.pampdebower.utilbower.decodeFromBase64Bower
 import javax.inject.Inject
 
 class PrivacyPolicyFragmentBower : ViewBindingFragmentBower<FragmentWebViewBowerBinding>(FragmentWebViewBowerBinding::inflate) {
@@ -43,10 +43,10 @@ class PrivacyPolicyFragmentBower : ViewBindingFragmentBower<FragmentWebViewBower
       resources.getStringArray(R.array.prohibited_urls).toList()
     )
 
-    bndBower.webViewBower.loadUrl(BuildConfig.PRIVACY_POLICY_KEY_BOWER.decodeFromBase64())
+    bndBower.webViewBower.loadUrl(BuildConfig.PRIVACY_POLICY_KEY_BOWER.decodeFromBase64Bower())
 
     bndBower.layoutWebViewBower.setOnRefreshListener {
-      bndBower.webViewBower.loadUrl(BuildConfig.PRIVACY_POLICY_KEY_BOWER.decodeFromBase64())
+      bndBower.webViewBower.loadUrl(BuildConfig.PRIVACY_POLICY_KEY_BOWER.decodeFromBase64Bower())
       bndBower.layoutWebViewBower.isRefreshing = false
     }
   }

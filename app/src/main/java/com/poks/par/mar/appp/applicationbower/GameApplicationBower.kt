@@ -14,7 +14,7 @@ import com.poks.par.mar.appp.dibower.DaggerAppComponentBower
 import com.poks.par.mar.appp.dibower.RepositoryModuleBower
 import com.poks.par.mar.appp.important.modelsbower.AFStatusBower
 import com.poks.par.mar.appp.important.modelsbower.BinomLinkBower
-import com.poks.par.mar.appp.pampdebower.utilbower.decodeFromBase64
+import com.poks.par.mar.appp.pampdebower.utilbower.decodeFromBase64Bower
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -49,7 +49,7 @@ class GameApplicationBower : Application() {
   private fun setupOneSignalBower() {
     OneSignal.initWithContext(applicationContext)
     OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE)
-    OneSignal.setAppId(BuildConfig.ONE_SIGNAL_KEY_BOWER.decodeFromBase64())
+    OneSignal.setAppId(BuildConfig.ONE_SIGNAL_KEY_BOWER.decodeFromBase64Bower())
   }
 
   private fun setupAppsFlyerBower() {
@@ -59,7 +59,7 @@ class GameApplicationBower : Application() {
       override fun onAttributionFailure(p0: String?) {}
 
       override fun onConversionDataSuccess(dataMapBower: MutableMap<String, Any>?) {
-        val sub10Bower = "$appsFlyerIDBower||$googleAdvertisingIDBower||${BuildConfig.APPS_FLYER_KEY_BOWER.decodeFromBase64()}"
+        val sub10Bower = "$appsFlyerIDBower||$googleAdvertisingIDBower||${BuildConfig.APPS_FLYER_KEY_BOWER.decodeFromBase64Bower()}"
         val binomLinkBower = when (val afStatus = dataMapBower?.get(AF_STATUS_BOWER)) {
           ORGANIC_BOWER -> {
             BinomLinkBower(
@@ -92,7 +92,7 @@ class GameApplicationBower : Application() {
       }
     }
     AppsFlyerLib.getInstance().apply {
-      init(BuildConfig.APPS_FLYER_KEY_BOWER.decodeFromBase64(), appsFlyerConversionListenerBower, applicationContext)
+      init(BuildConfig.APPS_FLYER_KEY_BOWER.decodeFromBase64Bower(), appsFlyerConversionListenerBower, applicationContext)
       start(applicationContext)
       appsFlyerIDBower = getAppsFlyerUID(applicationContext)
     }

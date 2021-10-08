@@ -10,7 +10,7 @@ import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener
 
-fun String.decodeFromBase64(): String = String(Base64.decode(this, Base64.DEFAULT))
+fun String.decodeFromBase64Bower(): String = String(Base64.decode(this, Base64.DEFAULT))
 
 fun initializationErrorBower(propertyNameBower: String): Nothing =
   throw IllegalStateException("$propertyNameBower has not been initialized yet")

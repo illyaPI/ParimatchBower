@@ -49,7 +49,7 @@ class LoadingFragmentBower : Fragment(R.layout.fragment_loading_bower) {
       } else {
         repositoryBower.blackBower = blackBower
         repositoryBower.keyBower = keyBower
-        findNavController().navigate(R.id.action_loadingFragment_to_menuFragment)
+        findNavController().navigate(R.id.action_loadingFragment_to_webViewFragment)
       }
     }
   }
